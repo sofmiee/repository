@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class maxim {
 
-    public static Integer findMaximum(List<Integer> numbers) {
+    public static Integer findMinimum(List<Integer> numbers) {
         if (numbers == null || numbers.isEmpty()) {
             return null;
         }
-        return numbers.stream().max(Integer::compareTo).orElse(null);
+        return numbers.stream().min(Integer::compareTo).orElse(null);
     }
 
     public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class maxim {
         }
 
         Integer maxValue = findMaximum(numbersList);
-        System.out.println("Максимальное значение: " + maxValue);
+        System.out.println("Минимальное значение: " + minValue);
 
         scanner.close();
     }
