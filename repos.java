@@ -21,7 +21,7 @@ public class maxim {
 
         System.out.println("Введите " + count + " целых чисел:");
         for (int i = 0; i < count; i++) {
-            System.out.print("Элемент " + (i + 1) + ": ");
+            System.out.print("Элемент " + (i + 1) + ":");
             int number = scanner.nextInt();
             numbersList.add(number);
         }
