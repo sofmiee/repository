@@ -26,7 +26,7 @@ public class maxim {
             numbersList.add(number);
         }
 
-        Integer maxValue = findMaximum(numbersList);
+        Integer minValue = findMaximum(numbersList);
         System.out.println("Минимальное значение: " + minValue);
 
         scanner.close();
